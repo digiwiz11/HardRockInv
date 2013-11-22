@@ -1,5 +1,6 @@
 package ca.hardrockrealms.digiwiz.hardrockinv;
 
+import org.bukkit.World;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 
@@ -27,6 +28,19 @@ public class ConfigSettings {
         m_ConfigFile = filename;
         m_ConfigData = new YamlConfiguration();
         m_Plugin = parent;
+    }
+
+
+    public String getGroup(World world)
+    {
+        String group = null;
+
+        if (m_GroupList.containsKey(world.getName()) == true)
+        {
+            group = m_GroupList.get(world.getName());
+        }
+
+        return group;
     }
 
     public List<String> groupList() {

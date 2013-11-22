@@ -2,22 +2,22 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bde360d-5f0d-4ecb-927b-17f00ca13730" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/ChestPosition.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/HardRockInv.iml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plugin.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HardRockInv.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385134866994" ignored="false" />
-    <file path="/ConfigSettings.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385134911080" ignored="false" />
+    <file path="/Dummy.txt" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385151172155" ignored="false" />
+    <file path="/ConfigSettings.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385153175951" ignored="false" />
     <file path="/LastChestSettings.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385136395126" ignored="false" />
+    <file path="/PlayerData.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385155389381" ignored="false" />
+    <file path="/PlayerLoadRunnable.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385152711170" ignored="false" />
+    <file path="/PlayerManager.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385155640006" ignored="false" />
+    <file path="/PlayerListener.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385155866929" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -32,6 +32,7 @@
     <disable_hints />
   </component>
   <component name="DebuggerManager">
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -68,7 +69,6 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -77,7 +77,73 @@
     <favorites_list name="HardRockInv" />
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file leaf-file-name="PlayerListener.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="54" column="75" selection-start="2204" selection-end="2204" vertical-scroll-proportion="0.78467155">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerLoginRunnable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="39" selection-start="783" selection-end="794" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerManager.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="57" column="57" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#490#510#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PlayerData.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="208" column="0" selection-start="7403" selection-end="7403" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigSettings.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="33" column="26" selection-start="898" selection-end="906" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HardRockInv.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="90" column="40" selection-start="2935" selection-end="2949" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindManager">
     <FindUsagesManager>
@@ -95,21 +161,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/ChestPosition.java" />
-        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" />
-        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" />
-        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoadRunnable.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="10" />
     <option name="y" value="27" />
-    <option name="width" value="1660" />
+    <option name="width" value="1680" />
     <option name="height" value="996" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -169,8 +236,22 @@
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+          </PATH>
+          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="META-INF" />
+              <option name="myItemId" value="HardRockInv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HardRockInv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hardrockinv" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -189,6 +270,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="hardrockinv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="runnables" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -236,37 +321,16 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HardRockInv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HardRockInv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="hardrockinv" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="generator" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
       <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Artifacts" />
     <property name="GoToFile.includeJavaFiles" value="false" />
+    <property name="OverrideImplement.combined" value="true" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.sorted" value="false" />
@@ -372,6 +436,23 @@
     </configuration>
   </component>
   <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="SvnConfiguration" maxAnnotateRevisions="500" myUseAcceleration="nothing" myAutoUpdateAfterCommit="false" cleanupOnStartRun="false" SSL_PROTOCOLS="all">
+    <option name="USER" value="" />
+    <option name="PASSWORD" value="" />
+    <option name="mySSHConnectionTimeout" value="30000" />
+    <option name="mySSHReadTimeout" value="30000" />
+    <option name="LAST_MERGED_REVISION" />
+    <option name="MERGE_DRY_RUN" value="false" />
+    <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
+    <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
+    <option name="IGNORE_SPACES_IN_MERGE" value="false" />
+    <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
+    <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
+    <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
+    <option name="FORCE_UPDATE" value="false" />
+    <option name="IGNORE_EXTERNALS" value="false" />
+    <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
+  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="3bde360d-5f0d-4ecb-927b-17f00ca13730" name="Default" comment="" />
@@ -381,29 +462,29 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="10" y="27" width="1660" height="996" extended-state="0" />
-    <editor active="false" />
+    <frame x="0" y="27" width="1680" height="996" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19225967" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19173859" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -471,41 +552,30 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java">
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java">
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="20" selection-start="495" selection-end="495" vertical-scroll-proportion="0.0">
+        <state line="191" column="0" selection-start="6650" selection-end="6650" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="32" selection-start="80" selection-end="80" vertical-scroll-proportion="0.03640777">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="87" selection-end="87" vertical-scroll-proportion="0.03640777">
-          <folding>
-            <element signature="e#465#485#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="87" selection-end="87" vertical-scroll-proportion="0.03699137">
           <folding />
         </state>
       </provider>
@@ -517,16 +587,62 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java">
+    <entry file="jar://$PROJECT_DIR$/../testserver/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/org/bukkit/scheduler/BukkitRunnable.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="32" selection-start="148" selection-end="148" vertical-scroll-proportion="0.05461165">
+        <state line="6" column="22" selection-start="172" selection-end="172" vertical-scroll-proportion="0.095663264">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="33" column="26" selection-start="898" selection-end="906" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="32" selection-start="80" selection-end="80" vertical-scroll-proportion="0.03699137">
+        <state line="90" column="40" selection-start="2935" selection-end="2949" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="208" column="0" selection-start="7403" selection-end="7403" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="57" column="57" selection-start="1713" selection-end="1713" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#490#510#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="39" selection-start="783" selection-end="794" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="54" column="75" selection-start="2204" selection-end="2204" vertical-scroll-proportion="0.78467155">
           <folding />
         </state>
       </provider>
