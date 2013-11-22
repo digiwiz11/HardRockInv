@@ -1,4 +1,4 @@
-package ca.hardrockrealms.hardrockinv.player;
+package ca.hardrockrealms.digiwiz.hardrockinv.player;
 
 import org.bukkit.Location;
 

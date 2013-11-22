@@ -1,4 +1,4 @@
-package ca.hardrockrealms.hardrockinv;
+package ca.hardrockrealms.digiwiz.hardrockinv;
 
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;

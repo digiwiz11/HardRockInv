@@ -1,8 +1,8 @@
-package ca.hardrockrealms.hardrockinv;
+package ca.hardrockrealms.digiwiz.hardrockinv;
 
-import ca.hardrockrealms.hardrockinv.generator.EmptyGenerator;
-import ca.hardrockrealms.hardrockinv.listeners.PlayerListener;
-import ca.hardrockrealms.hardrockinv.player.PlayerManager;
+import ca.hardrockrealms.digiwiz.hardrockinv.generator.EmptyGenerator;
+import ca.hardrockrealms.digiwiz.hardrockinv.listeners.PlayerListener;
+import ca.hardrockrealms.digiwiz.hardrockinv.player.PlayerManager;
 import org.bukkit.Bukkit;
 import org.bukkit.World;
 import org.bukkit.WorldCreator;

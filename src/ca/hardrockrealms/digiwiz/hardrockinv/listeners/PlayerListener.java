@@ -1,7 +1,7 @@
-package ca.hardrockrealms.hardrockinv.listeners;
+package ca.hardrockrealms.digiwiz.hardrockinv.listeners;
 
-import ca.hardrockrealms.hardrockinv.HardRockInv;
-import ca.hardrockrealms.hardrockinv.player.PlayerManager;
+import ca.hardrockrealms.digiwiz.hardrockinv.HardRockInv;
+import ca.hardrockrealms.digiwiz.hardrockinv.player.PlayerManager;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.EventPriority;
 import org.bukkit.event.Listener;

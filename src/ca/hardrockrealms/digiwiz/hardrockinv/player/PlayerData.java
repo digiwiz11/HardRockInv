@@ -1,6 +1,6 @@
-package ca.hardrockrealms.hardrockinv.player;
+package ca.hardrockrealms.digiwiz.hardrockinv.player;
 
-import ca.hardrockrealms.hardrockinv.HardRockInv;
+import ca.hardrockrealms.digiwiz.hardrockinv.HardRockInv;
 import org.bukkit.Location;
 import org.bukkit.Material;
 import org.bukkit.World;

@@ -1,6 +1,6 @@
-package ca.hardrockrealms.hardrockinv;
+package ca.hardrockrealms.digiwiz.hardrockinv;
 
-import ca.hardrockrealms.hardrockinv.player.ChestPosition;
+import ca.hardrockrealms.digiwiz.hardrockinv.player.ChestPosition;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.YamlConfiguration;
 

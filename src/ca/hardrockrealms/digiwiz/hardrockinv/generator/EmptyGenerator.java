@@ -1,4 +1,4 @@
-package ca.hardrockrealms.hardrockinv.generator;
+package ca.hardrockrealms.digiwiz.hardrockinv.generator;
 
 import org.bukkit.Location;
 import org.bukkit.Material;
