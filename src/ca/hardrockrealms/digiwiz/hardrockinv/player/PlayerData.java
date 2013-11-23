@@ -14,7 +14,10 @@ import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
 
 import java.io.File;
-import java.util.*;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 /**
  * Created with IntelliJ IDEA.
@@ -34,7 +37,7 @@ public class PlayerData {
     private int m_LastYPosition = 1;
     private HashMap<String, Location> m_ChestLocations = new HashMap<String, Location>();
 
-    public PlayerData(Player player, HardRockInv parent){
+    public PlayerData(Player player, HardRockInv parent) {
         m_Player = player;
         m_ConfigData = new YamlConfiguration();
         m_Plugin = parent;
@@ -71,27 +74,21 @@ public class PlayerData {
                 e.printStackTrace();
             }
 
-            if (m_ConfigData.contains("LogoutWorld") == true)
-            {
+            if (m_ConfigData.contains("LogoutWorld") == true) {
                 m_LogoutWorld = m_ConfigData.getString("LogoutWorld");
             }
 
-                if (m_ConfigData.contains("ChestPlotX") == true && m_ConfigData.contains("ChestPlotY") == true && m_ConfigData.contains("ChestPlotZ") == true && m_ConfigData.contains("ChestPlotSize") == true)
-            {
+            if (m_ConfigData.contains("ChestPlotX") == true && m_ConfigData.contains("ChestPlotY") == true && m_ConfigData.contains("ChestPlotZ") == true && m_ConfigData.contains("ChestPlotSize") == true) {
                 m_ChestPlotPosition.xPos = m_ConfigData.getInt("ChestPlotX");
                 m_ChestPlotPosition.yPos = m_ConfigData.getInt("ChestPlotY");
                 m_ChestPlotPosition.zPos = m_ConfigData.getInt("ChestPlotZ");
                 m_ChestPlotPosition.nSize = m_ConfigData.getInt("ChestPlotSize");
-            }
-            else
-            {
+            } else {
                 m_Plugin.getLogger().warning("Player chest data location missing, creating new location.");
                 m_ChestPlotPosition = m_Plugin.lastChestSettings().claimNextChestPosition();
                 bSaveFile = true;
             }
-        }
-        else
-        {
+        } else {
             m_ChestPlotPosition = m_Plugin.lastChestSettings().claimNextChestPosition();
             bSaveFile = true;
         }
@@ -105,27 +102,20 @@ public class PlayerData {
         ConfigurationSection groupSection = m_ConfigData.getConfigurationSection("WorldGroups");
         List<String> groupList = m_Plugin.configSettings().groupList();
 
-        for (String group: groupList)
-        {
+        for (String group : groupList) {
             int xPos = m_ChestPlotPosition.xPos;
             int yPos = m_LastYPosition;
             int zPos = m_ChestPlotPosition.zPos;
 
-            if (groupSection != null)
-            {
-                if (groupSection.contains(group) == true)
-                {
+            if (groupSection != null) {
+                if (groupSection.contains(group) == true) {
                     yPos = groupSection.getInt(group + ".ChestPosY");
-                }
-                else
-                {
+                } else {
                     m_LastYPosition += 1;
                     yPos = m_LastYPosition;
                     bSaveFile = true;
                 }
-            }
-            else
-            {
+            } else {
                 m_LastYPosition += 1;
                 yPos = m_LastYPosition;
                 bSaveFile = true;
@@ -137,26 +127,25 @@ public class PlayerData {
 
         //Make sure the chest locations have chests placed.
         Iterator iter = m_ChestLocations.entrySet().iterator();
-        while (iter.hasNext())
-        {
+        while (iter.hasNext()) {
             Map.Entry entry = (Map.Entry) iter.next();
             setupInventoryChests((Location) entry.getValue(), entry.getKey().toString());
         }
 
-        if (bSaveFile == true)
-        {
+        if (bSaveFile == true) {
             saveConfig();
         }
     }
 
-    private void setupInventoryChests(Location loc, String stGroupName)
-    {
+    private void setupInventoryChests(Location loc, String stGroupName) {
         World invWorld = m_Plugin.getInventoryWorld();
         Location loc2 = new Location(loc.getWorld(), loc.getX() + 1, loc.getY(), loc.getZ());
+        Location enderLoc = new Location(loc.getWorld(), loc.getX() + 3, loc.getY(), loc.getZ());
         Location signLoc = new Location(loc.getWorld(), loc.getX(), loc.getY(), loc.getZ() + 1);
 
         Block chest = invWorld.getBlockAt(loc);
         Block chest2 = invWorld.getBlockAt(loc2);
+        Block enderChest = invWorld.getBlockAt(enderLoc);
         Block playerSign = invWorld.getBlockAt(signLoc);
 
         if (chest.getType() != Material.CHEST)
@@ -165,8 +154,10 @@ public class PlayerData {
         if (chest2.getType() != Material.CHEST)
             chest2.setType(Material.CHEST);
 
-        if (playerSign.getType() != Material.WALL_SIGN)
-        {
+        if (enderChest.getType() != Material.CHEST)
+            enderChest.setType(Material.CHEST);
+
+        if (playerSign.getType() != Material.WALL_SIGN) {
             playerSign.setType(Material.WALL_SIGN);
             playerSign.setData((byte) 0x03); //South Facing.
             Sign sign = (Sign) (playerSign.getState());
@@ -179,8 +170,7 @@ public class PlayerData {
 
     public void saveConfig() {
         try {
-            if (m_PlayerFile != null)
-            {
+            if (m_PlayerFile != null) {
                 m_ConfigData.set("ChestPlotX", m_ChestPlotPosition.xPos);
                 m_ConfigData.set("ChestPlotY", m_ChestPlotPosition.yPos);
                 m_ConfigData.set("ChestPlotZ", m_ChestPlotPosition.zPos);
@@ -191,8 +181,7 @@ public class PlayerData {
                 //Store the chest locations
                 ConfigurationSection groups = m_ConfigData.createSection("WorldGroups");
                 Iterator iter = m_ChestLocations.entrySet().iterator();
-                while (iter.hasNext())
-                {
+                while (iter.hasNext()) {
                     Map.Entry entry = (Map.Entry) iter.next();
                     ConfigurationSection groupSection = groups.createSection(entry.getKey().toString());
                     Location loc = (Location) entry.getValue();
@@ -205,46 +194,113 @@ public class PlayerData {
         }
     }
 
-    public void storeInventory(World currentWorld, World newWorld)
-    {
-        String currentGroup = m_Plugin.configSettings().getGroup(currentWorld);
-        String newGroup = m_Plugin.configSettings().getGroup(newWorld);
+    public void restoreInventory(World world) {
+        if (world == null) {
+            return;
+        }
 
-        if (currentGroup.equals(newGroup) == false)
-        {
-            ItemStack[] playerInventory = m_Player.getInventory().getContents();
-            ItemStack[] playerArmor = m_Player.getInventory().getArmorContents();
+        String currentGroup = m_Plugin.configSettings().getGroup(world);
 
-            if (m_ChestLocations.containsKey(currentGroup) == true)
-            {
+        if (currentGroup != null) {
+            if (m_ChestLocations.containsKey(currentGroup) == true) {
                 World invWorld = m_Plugin.getInventoryWorld();
-
                 Location chestLoc = m_ChestLocations.get(currentGroup);
                 Block chestBlock = invWorld.getBlockAt(chestLoc);
 
-                if (chestBlock.getType() == Material.CHEST)
-                {
+                if (chestBlock.getType() == Material.CHEST) {
+                    Chest chest = (Chest) chestBlock.getState();
+                    Inventory chestInv = chest.getInventory();
+
+                    //Retrieve the armor
+                    m_Player.getInventory().setHelmet(chestInv.getItem(0));
+                    m_Player.getInventory().setChestplate(chestInv.getItem(1));
+                    m_Player.getInventory().setLeggings(chestInv.getItem(2));
+                    m_Player.getInventory().setBoots(chestInv.getItem(3));
+
+                    //Restore the inventory
+                    int nNumItems = m_Player.getInventory().getSize();
+                    ItemStack[] items = new ItemStack[nNumItems];
+                    for (int index = 0; index < nNumItems; index++) {
+                        m_Player.getInventory().setItem(index, chestInv.getItem(9 + index));
+                    }
+
+                    //Clear the chest
+                    chestInv.clear();
+                } else {
+                    m_Plugin.getLogger().warning("Chest for player [" + m_Player.getName() + "] was not found in inventory world!");
+                }
+
+                //Restore the ender chest
+                Location enderChestLoc = new Location(chestLoc.getWorld(), chestLoc.getX() + 3, chestLoc.getY(), chestLoc.getZ());
+                Block enderChestBlock = invWorld.getBlockAt(enderChestLoc);
+                if (enderChestBlock.getType() == Material.CHEST) {
+                    Chest chest = (Chest) enderChestBlock.getState();
+
+                    m_Player.getEnderChest().clear();
+                    m_Player.getEnderChest().setContents(chest.getInventory().getContents());
+
+                    chest.getInventory().clear();
+                } else {
+                    m_Plugin.getLogger().warning("Ender chest for player [" + m_Player.getName() + "] was not found in inventory world!");
+                }
+            }
+        }
+    }
+
+    public void storeInventory(World world) {
+        if (world == null) {
+            return;
+        }
+
+        String currentGroup = m_Plugin.configSettings().getGroup(world);
+
+        if (currentGroup != null) {
+            if (m_ChestLocations.containsKey(currentGroup) == true) {
+                ItemStack[] playerInventory = m_Player.getInventory().getContents();
+                World invWorld = m_Plugin.getInventoryWorld();
+
+                Location chestLoc = m_ChestLocations.get(currentGroup);
+                Location enderChestLoc = new Location(chestLoc.getWorld(), chestLoc.getX() + 3, chestLoc.getY(), chestLoc.getZ());
+
+                Block chestBlock = invWorld.getBlockAt(chestLoc);
+                Block enderChestBlock = invWorld.getBlockAt(enderChestLoc);
+
+                if (chestBlock.getType() == Material.CHEST) {
                     Chest chest = (Chest) chestBlock.getState();
                     Inventory chestInv = chest.getInventory();
 
                     chestInv.clear();
 
                     //Store the armor
-                    int index = 0;
-                    for (ItemStack item: playerArmor)
-                    {
+                    chestInv.setItem(0, m_Player.getInventory().getHelmet());
+                    chestInv.setItem(1, m_Player.getInventory().getChestplate());
+                    chestInv.setItem(2, m_Player.getInventory().getLeggings());
+                    chestInv.setItem(3, m_Player.getInventory().getBoots());
+
+                    //Store the inventory
+                    int index = 9; //9 Gives the first row of the chest to the armor
+                    for (ItemStack item : playerInventory) {
                         chestInv.setItem(index++, item);
                     }
 
-                    //Store the inventory
-                    index = 10;
-                    for (ItemStack item: playerInventory)
-                    {
-                        chestInv.setItem(index++, item);
-                    }
+                    //Clear the player inventory and armor
+                    m_Player.getInventory().clear();
+                    m_Player.getInventory().setHelmet(null);
+                    m_Player.getInventory().setChestplate(null);
+                    m_Player.getInventory().setLeggings(null);
+                    m_Player.getInventory().setBoots(null);
+                } else {
+                    //ERROR Chest not found.
                 }
-                else
-                {
+
+                if (enderChestBlock.getType() == Material.CHEST) {
+                    ItemStack[] playerEnderChest = m_Player.getEnderChest().getContents();
+                    Chest chest = (Chest) enderChestBlock.getState();
+                    Inventory chestInv = chest.getInventory();
+
+                    chestInv.setContents(playerEnderChest);
+                    m_Player.getEnderChest().clear();
+                } else {
                     //ERROR Chest not found.
                 }
             }

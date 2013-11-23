@@ -16,16 +16,14 @@ public class PlayerLoginRunnable extends BukkitRunnable {
     private Player m_Player = null;
     private PlayerManager m_PlayerManager = null;
 
-    public PlayerLoginRunnable(Player Player, PlayerManager manager)
-    {
+    public PlayerLoginRunnable(Player Player, PlayerManager manager) {
         m_Player = Player;
         m_PlayerManager = manager;
     }
 
     @Override
     public void run() {
-        if (m_Player != null && m_Player.isOnline() == true)
-        {
+        if (m_Player != null && m_Player.isOnline() == true) {
             m_PlayerManager.playerLogin(m_Player);
         }
     }

@@ -35,6 +35,7 @@ public class EmptyGenerator extends ChunkGenerator {
 
     /**
      * Generate a base of bed rock for the empty world.
+     *
      * @param world
      * @param random
      * @param chunkX

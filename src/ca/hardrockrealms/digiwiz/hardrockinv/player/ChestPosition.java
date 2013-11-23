@@ -1,7 +1,5 @@
 package ca.hardrockrealms.digiwiz.hardrockinv.player;
 
-import org.bukkit.Location;
-
 /**
  * Created with IntelliJ IDEA.
  * User: DAD

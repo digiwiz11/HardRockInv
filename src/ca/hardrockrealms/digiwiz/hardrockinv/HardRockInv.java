@@ -12,8 +12,6 @@ import org.bukkit.generator.ChunkGenerator;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import java.io.File;
-
 /**
  * Created with IntelliJ IDEA.
  * User: DAD
@@ -83,13 +81,11 @@ public class HardRockInv extends JavaPlugin {
         return new EmptyGenerator();
     }
 
-    public LastChestSettings lastChestSettings()
-    {
+    public LastChestSettings lastChestSettings() {
         return m_LastChestSettings;
     }
 
-    public ConfigSettings configSettings()
-    {
+    public ConfigSettings configSettings() {
         return m_ConfigSettings;
     }
 
