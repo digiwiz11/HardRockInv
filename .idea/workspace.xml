@@ -2,27 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3bde360d-5f0d-4ecb-927b-17f00ca13730" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/ChestPosition.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/ChestPosition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" afterPath="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/libraries/craftbukkit_1_5_2_R1_1_20130701_165130_4.xml" afterPath="$PROJECT_DIR$/.idea/libraries/craftbukkit_1_5_2_R1_1_20130701_165130_4.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.yml" afterPath="$PROJECT_DIR$/plugin.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HardRockInv.iws" />
     <ignored path=".idea/workspace.xml" />
-    <file path="/Dummy.txt" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385159885959" ignored="false" />
+    <file path="/Dummy.txt" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385245716341" ignored="false" />
     <file path="/ConfigSettings.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385181953185" ignored="false" />
     <file path="/LastChestSettings.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385136395126" ignored="false" />
     <file path="/PlayerData.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385182089869" ignored="false" />
     <file path="/PlayerLoadRunnable.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385152711170" ignored="false" />
-    <file path="/PlayerManager.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385180673221" ignored="false" />
+    <file path="/PlayerManager.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385246167110" ignored="false" />
     <file path="/PlayerListener.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385182500670" ignored="false" />
     <file path="/fragment.java" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385160040872" ignored="false" />
     <file path="/plugin.yml" changelist="3bde360d-5f0d-4ecb-927b-17f00ca13730" time="1385182559231" ignored="false" />
@@ -77,7 +70,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints>
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" line="137" class="ca.hardrockrealms.digiwiz.hardrockinv.ConfigSettings" package="ca.hardrockrealms.digiwiz.hardrockinv">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
@@ -107,29 +100,55 @@
         <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java">
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="1" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LastChestSettings.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="PlayerLoginRunnable.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LastChestSettings.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="20" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="86" column="72" selection-start="2318" selection-end="2318" vertical-scroll-proportion="1.6790123">
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plugin.yml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="18" selection-start="92" selection-end="92" vertical-scroll-proportion="0.058925476">
+            <state line="2" column="18" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HardRockInv.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="69" column="0" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ConfigSettings.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="89" column="29" selection-start="2622" selection-end="2622" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#3535#3557#0" expanded="true" />
+                <element signature="e#3928#3936#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -137,7 +156,16 @@
       <file leaf-file-name="PlayerManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="5" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
+            <state line="42" column="6" selection-start="1361" selection-end="1361" vertical-scroll-proportion="-12.92">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EmptyGenerator.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="13" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -146,10 +174,8 @@
       <file leaf-file-name="PlayerData.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="243" column="61" selection-start="9781" selection-end="9781" vertical-scroll-proportion="0.0">
-              <folding>
-                <element signature="imports" expanded="false" />
-              </folding>
+            <state line="36" column="35" selection-start="1116" selection-end="1116" vertical-scroll-proportion="141.04">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -174,15 +200,15 @@
       <list>
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/ChestPosition.java" />
-        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoadRunnable.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java" />
-        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java" />
-        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" />
         <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java" />
-        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java" />
         <option value="$PROJECT_DIR$/plugin.yml" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java" />
+        <option value="$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java" />
       </list>
     </option>
   </component>
@@ -190,10 +216,10 @@
     <treeState />
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
+    <option name="x" value="1912" />
     <option name="y" value="-8" />
-    <option name="width" value="1936" />
-    <option name="height" value="1056" />
+    <option name="width" value="1696" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -221,8 +247,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -325,8 +349,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HardRockInv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HardRockInv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="hardrockinv" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="generator" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -341,12 +389,18 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
-    <property name="FullScreen" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
+    <property name="FullScreen" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="dynamic.classpath" value="false" />
   </component>
   <component name="RunManager" selected="Application.Unnamed">
+    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
+      <module name="" />
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
+      <option name="PROGRAM_PARAMETERS" />
+      <method />
+    </configuration>
     <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
       <module name="" />
       <setting name="path" value="" />
@@ -356,31 +410,12 @@
       <setting name="debug" value="false" />
       <method />
     </configuration>
-    <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
-      <module name="" />
-      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m" />
-      <option name="PROGRAM_PARAMETERS" />
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -408,6 +443,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -501,7 +549,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="7" />
+    <frame x="1912" y="-8" width="1696" height="1066" extended-state="6" />
     <editor active="false" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -509,7 +557,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36262515" sideWeight="0.6067236" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32453245" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3359288" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -517,8 +565,8 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.12860192" sideWeight="0.6429366" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.19530416" sideWeight="0.67074525" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32925472" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2239902" sideWeight="0.67546755" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32453245" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -591,11 +639,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="34" selection-start="34" selection-end="34" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/ChestPosition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="13" selection-start="250" selection-end="250" vertical-scroll-proportion="0.2184466">
@@ -608,58 +651,83 @@
         <state line="6" column="22" selection-start="172" selection-end="172" vertical-scroll-proportion="0.095663264" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java">
+    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/net/minecraft/server/v1_5_R3/World.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="90" column="40" selection-start="2935" selection-end="2949" vertical-scroll-proportion="0.0">
+        <state line="66" column="63" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.36549166" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/org/bukkit/craftbukkit/v1_5_R3/entity/CraftEntity.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="28" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.28804347" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/org/bukkit/craftbukkit/v1_5_R3/scheduler/CraftScheduler.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="61" column="16" selection-start="3715" selection-end="3715" vertical-scroll-proportion="0.35326087" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/net/minecraft/server/v1_5_R3/DedicatedServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="69" column="16" selection-start="2866" selection-end="2866" vertical-scroll-proportion="0.35326087" />
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/net/minecraft/server/v1_5_R3/MinecraftServer.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="268" column="36" selection-start="9686" selection-end="9686" vertical-scroll-proportion="0.4728261" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="18" selection-start="92" selection-end="92" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/runnables/PlayerLoginRunnable.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="33" selection-start="823" selection-end="823" vertical-scroll-proportion="0.0">
+        <state line="14" column="13" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/net/minecraft/server/v1_5_R3/World.class">
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="63" selection-start="2738" selection-end="2738" vertical-scroll-proportion="0.36549166">
+        <state line="18" column="1" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/org/bukkit/craftbukkit/v1_5_R3/entity/CraftEntity.class">
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="28" selection-start="1183" selection-end="1183" vertical-scroll-proportion="0.28804347">
+        <state line="42" column="6" selection-start="1361" selection-end="1361" vertical-scroll-proportion="-12.92">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/org/bukkit/craftbukkit/v1_5_R3/scheduler/CraftScheduler.class">
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/generator/EmptyGenerator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="16" selection-start="3715" selection-end="3715" vertical-scroll-proportion="0.35326087">
+        <state line="19" column="13" selection-start="470" selection-end="470" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/net/minecraft/server/v1_5_R3/DedicatedServer.class">
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/HardRockInv.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="69" column="16" selection-start="2866" selection-end="2866" vertical-scroll-proportion="0.35326087">
+        <state line="69" column="0" selection-start="2284" selection-end="2284" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="jar://$PROJECT_DIR$/../TestServer/craftbukkit-1.5.2-R1.1-20130701.165130-4.jar!/net/minecraft/server/v1_5_R3/MinecraftServer.class">
+    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="268" column="36" selection-start="9686" selection-end="9686" vertical-scroll-proportion="0.4728261">
+        <state line="36" column="35" selection-start="1116" selection-end="1116" vertical-scroll-proportion="141.04">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/ConfigSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="89" column="29" selection-start="2311" selection-end="2311" vertical-scroll-proportion="-0.6187175">
+        <state line="89" column="29" selection-start="2622" selection-end="2622" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#3535#3557#0" expanded="true" />
             <element signature="e#3928#3936#0" expanded="true" />
@@ -667,43 +735,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerManager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="5" selection-start="594" selection-end="594" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/player/PlayerData.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="243" column="61" selection-start="9781" selection-end="9781" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/listeners/PlayerListener.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="1" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ca/hardrockrealms/digiwiz/hardrockinv/LastChestSettings.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="20" selection-start="192" selection-end="192" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="18" selection-start="92" selection-end="92" vertical-scroll-proportion="0.058925476">
+        <state line="86" column="72" selection-start="2318" selection-end="2318" vertical-scroll-proportion="1.6790123">
           <folding />
         </state>
       </provider>

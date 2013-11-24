@@ -39,10 +39,12 @@ public class PlayerManager {
             String currentWorld = player.getWorld().getName();
             String logoutWorld = data.logoutWorld();
 
-            if (currentWorld.equals(logoutWorld) == false) {
-                World logout = m_Plugin.getServer().getWorld(logoutWorld);
-
-                playerWorldChange(player, logout, player.getWorld());
+            if (logoutWorld != null && logoutWorld.length() > 0)
+            {
+                if (currentWorld.equals(logoutWorld) == false) {
+                    World logout = m_Plugin.getServer().getWorld(logoutWorld);
+                    playerWorldChange(player, logout, player.getWorld());
+                }
             }
         }
     }

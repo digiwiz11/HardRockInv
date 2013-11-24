@@ -21,7 +21,7 @@ public class LastChestSettings {
 
     // Settings
     public int m_LastXPos = 0;
-    public int m_LastYPos = 1;
+    public int m_LastYPos = 5;
     public int m_LastZPos = 0;
     // Settings
 

@@ -34,7 +34,7 @@ public class PlayerData {
     private File m_PlayerFile = null;
     private ChestPosition m_ChestPlotPosition = new ChestPosition();
     private String m_LogoutWorld = "";
-    private int m_LastYPosition = 1;
+    private int m_LastYPosition = 5;
     private HashMap<String, Location> m_ChestLocations = new HashMap<String, Location>();
 
     public PlayerData(Player player, HardRockInv parent) {

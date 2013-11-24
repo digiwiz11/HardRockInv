@@ -33,7 +33,7 @@ public class HardRockInv extends JavaPlugin {
 
     @Override
     public void onEnable() {
-        getLogger().info("onEnable has been invoked!");
+        getLogger().info("Starting Hard Rock Inventory!");
 
         m_ConfigSettings = new ConfigSettings("config.yml", this);
         m_ConfigSettings.loadConfig();
@@ -53,10 +53,10 @@ public class HardRockInv extends JavaPlugin {
 
     }
 
-    @Override
-    public void onDisable() {
-        getLogger().info("onDisable has been invoked!");
-    }
+//    @Override
+//    public void onDisable() {
+//        getLogger().info("onDisable has been invoked!");
+//    }
 
     /**
      * Get the inventory world, or create it, if it does not exist.
